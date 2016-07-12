@@ -15,7 +15,10 @@ class MineSweeper
     #depending on move/input validate whether move is legal
     #clear the cell if no bomb, and game over if there is
                                     #display all cells as cleared if game over
-      #clear the cells of all neighbors touching no bombs
+      #auto-clear the cells of all neighbors touching no bombs recursively
+
+  #check for victory
+    #comparing uncleared cells to bombs
 
 
 
