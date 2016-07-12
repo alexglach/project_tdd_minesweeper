@@ -28,4 +28,15 @@ describe Board do
 
   end
 
+  describe "populate_with_cells" do 
+    let(:b){Board.new}
+    cell = double("cell", :is_a? => Cell)
+
+    it "should populate all the spaces in the board with a new Cell" do 
+      b.populate_with_cells
+      expect(b.grid.flatten).to eq(Array.new(100){ cell })
+    end
+
+  end
+
 end
